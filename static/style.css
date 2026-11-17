@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #202124;
+}
+
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #bfdbfe;
+}
+
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#query {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#query:focus {
+    border-color: #2563eb;
+}
+
+button {
+    padding: 15px 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#status {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.result-card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.result-card h2 {
+    color: #1d4ed8;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.result-card a {
+    color: #15803d;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.result-card p {
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.result-card .scores {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.empty {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    #search-form {
+        flex-direction: column;
+    }
+}
